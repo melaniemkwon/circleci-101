@@ -25,11 +25,11 @@ jobs:
           at: my_workspace
 
       - run:
-        name: "TEST setup custom environ var"
+          name: "TEST setup custom environ var"
           command: |
             echo 'export FOO="BAR"' >> $FOO
        - run:
-            command: echo ${FOO}
+          command: echo ${FOO}
 workflows:
   version: 2
   one_and_two:
